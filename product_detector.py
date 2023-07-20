@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from collections import Counter
 
 class ProductDetector():
-    yolo = torch.hub.load("ultralytics/yolov5", "custom", path="runs/train/exp/weights/best.pt") #init Model yolov5
+    yolo = torch.hub.load("ultralytics/yolov5", "custom", path="product_weights/weights/best.pt") #init Model yolov5
 
     def get_detections(self, img):
         return self.yolo(img).pandas().xyxy[0].to_dict('records')
