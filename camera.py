@@ -11,7 +11,7 @@ class Camera(BaseCamera):
     def __init__(self):
         # Camera.set_video_source('rtsp://admin:Qq12345678@172.16.3.52/Streaming/Channels/101')
         # Camera.set_video_source('rtsp://admin:Khc1234567@192.168.90.13/Streaming/Channels/101')
-        Camera.set_video_source('test_imgs/video.mp4')
+        Camera.set_video_source('media/video.mp4')
         
         super(Camera, self).__init__()
         
